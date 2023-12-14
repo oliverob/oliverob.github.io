@@ -102,6 +102,14 @@ along with the following loop condition for any closed loop of sites \\(\\{ p_i\
         i^{n} \prod_{i=1}^{n} E_{p_i p_{i+1}} = 1
         \end{equation}
 </div>
+These conditions are more easily understood as:
+1. Edge operators must anti-commute with any vertices they touch
+2. Edge operators must anti-commute with any edges they share vertices with
+3.  All vertices must commute with each other
+4.  All edges that do not share a common vertex must commute
+5.  All edges must commute with vertices they do not touch
+6.  Any cycle of edges must leave the state unchanged
+
 We can see how these operators are mapped under the PEPO, using the symmetries from above
 {:refdef: style="text-align: center;"}
 ![operator 6](/assets/operator_10.svg){: height="250" }
@@ -120,7 +128,7 @@ In a similar manner we can find what \\(iE_{ij}\\) maps to under the PEPO:
 ![operator 4](/assets/operator_4.svg){: height="250" }
 ![operator 5](/assets/operator_5.svg){: height="250" }
 {: refdef}
-It is quick to check that all the same anticommutation relations are obeyed by the Pauli strings that the edges and vertices are mapped to.
+It is quick to check that the Pauli strings that the edges and vertices are mapped to all obey the correct anticommutation relations (listed above).
 
 Due to the loop condition there is a non-trivial Pauli loop string on every hexagon of tensors. 
 {:refdef: style="text-align: center;"}
